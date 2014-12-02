@@ -1,4 +1,5 @@
 #ECLIPSE
 .project
+.classpath
 .settings/
 target/
