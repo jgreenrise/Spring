@@ -28,7 +28,28 @@ public class FileUploadController {
                 fileName = file.getOriginalFilename();
                 byte[] bytes = file.getBytes();
                 BufferedOutputStream buffStream = 
-                        new BufferedOutputStream(new FileOutputStream(new File("/Users/JPatel/Documents/C9C/" + fileName)));
+                        new BufferedOutputStream(new FileOutputStream(new File("/Users/JPatel/Documents/C9C/ToBeDeleted/" + fileName)));
+                buffStream.write(bytes);
+                buffStream.close();
+                return "You have successfully uploaded " + fileName;
+            } catch (Exception e) {
+                return "You failed to upload " + fileName + ": " + e.getMessage();
+            }
+        } else {
+            return "Unable to upload. File is empty.";
+        }
+    }
+    
+    @RequestMapping(value="/singleSaveWithoutDescription", method=RequestMethod.POST)
+    public @ResponseBody String singleSaveWithoutDescription(@RequestParam("file") MultipartFile file){
+    	System.out.println("File Description:");
+    	String fileName = null;
+    	if (!file.isEmpty()) {
+            try {
+                fileName = file.getOriginalFilename();
+                byte[] bytes = file.getBytes();
+                BufferedOutputStream buffStream = 
+                        new BufferedOutputStream(new FileOutputStream(new File("/Users/JPatel/Documents/C9C/ToBeDeleted/" + fileName)));
                 buffStream.write(bytes);
                 buffStream.close();
                 return "You have successfully uploaded " + fileName;
@@ -55,7 +76,7 @@ public class FileUploadController {
 	                fileName = files[i].getOriginalFilename();
 	                byte[] bytes = files[i].getBytes();
 	                BufferedOutputStream buffStream = 
-	                        new BufferedOutputStream(new FileOutputStream(new File("/Users/JPatel/Documents/C9C/" + fileName)));
+	                        new BufferedOutputStream(new FileOutputStream(new File("/Users/JPatel/Documents/C9C/ToBeDeleted/" + fileName)));
 	                buffStream.write(bytes);
 	                buffStream.close();
 	                msg += "You have successfully uploaded " + fileName +"<br/>";
