@@ -76,14 +76,14 @@
 <body>
 	<h1>Single File Upload</h1>
 	
-	<h1>Without ajax</h1>
+	<h2>Without ajax</h2>
 	<form method="post" enctype="multipart/form-data" action="singleSave">
 		Upload File: <input type="file" name="file"> <br /> <br />
 		Description: <input type="text" name="desc" /> <br /> <br /> <input
 			type="submit" value="Upload">
 	</form>
 
-	<h1>With ajax</h1>
+	<h2>With ajax</h2>
 	<!-- action="singleSave" -->
 	<form id="form" method="post" enctype="multipart/form-data">
 		Upload File: <input type="file" name="file"> <br /> <br />
