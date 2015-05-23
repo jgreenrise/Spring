@@ -1,0 +1,42 @@
+<form>
+
+	<fieldset>
+
+		<!-- Form Name -->
+		<legend>Step 3 of 5 : Education</legend>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="id_input_education">Education</label> <input
+						type="text" class="form-control" name="MD" autocomplete="off"
+						id="id_input_education" placeholder="MD">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="id_input_year">Year</label> <input type="number"
+						class="form-control" name="Year" autocomplete="off"
+						id="id_input_year" placeholder="2014">
+				</div>
+			</div>
+		</div>
+		<button class="form-group btn btn-default">+</button>
+
+		<div class="form-group">
+			<label for="id_input_certification">Add certifications if any</label>
+			<input type="file" id="id_input_certification">
+			<p class="help-block">Example block-level help text here.</p>
+		</div>
+
+		<div class="form-group">
+			<label for="id_input_year">Language</label>
+			<textarea class="form-control textarea" rows="3" name="Message"
+				id="id_textarea_language" placeholder="Message"></textarea>
+		</div>
+
+		<button ui-sref="form.professsionalInformation" class="btn btn-default">Back</button>
+
+		<button ui-sref="form.clinicInformation" class="btn btn-default">Next</button>
+	</fieldset>
+</form>

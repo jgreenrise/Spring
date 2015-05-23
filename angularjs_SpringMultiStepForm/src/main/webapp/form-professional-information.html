@@ -1,0 +1,29 @@
+<form>
+
+	<fieldset>
+
+		<!-- Form Name -->
+		<legend>Step 2 of 5 : Professional information</legend>
+
+		<div class="form-group">
+			<label>Medical registration id</label> <input type="text"
+				class="form-control" id="id_input_medicalRegistartionId"
+				placeholder="Enter your unique medical registartion number">
+		</div>
+
+		<div class="form-group">
+			<label>Select your speciality</label>
+			<multiselect class="input-xlarge" multiple="true"
+				ng-model="selectedCar" options="c.name for c in cars"
+				change="selected()"></multiselect>
+			<div class="well well-small">{{selectedCar}}</div>
+		</div>
+		
+		<button ui-sref="form.contactInformation"
+			class="btn btn-default">Back</button>
+			
+		<button ui-sref="form.education"
+			class="btn btn-default">Next</button>
+
+	</fieldset>
+</form>
