@@ -1,20 +1,207 @@
-<form>
+<div class="container">
+	<form name="doctor_verification_form" class="form-horizontal"
+		ng-submit="signupForm()" novalidate>
 
-	<fieldset>
+		<fieldset>
 
-		<!-- Form Name -->
-		<legend>Step 1 of 5 : Mobile number</legend>
+			<!-- Form Name -->
+			<legend>1/5 : Mobile number</legend>
 
-		<div class="form-group">
-			<label>Mobile number</label> <input
-				type="tel" class="form-control" id="id_input_mobileNumber"
-				placeholder="Enter mobile number">
+			<div class="form-group">
+				<label class="col-sm-4 control-label">Mobile number</label>
+
+				<div class="col-sm-8">
+					<input ng-model="price" type="number" name="phoneNumber"
+						ng-pattern="/^[0-9]{8,13}$/" ng-minlength=8 ng-maxlength=13
+						required> <span
+						ng-show="doctorVerificationForm.phoneNumber.$error.pattern">Not
+						a valid number!</span> <span
+						ng-show="doctorVerificationForm.phoneNumber.$error.required">This
+						field is required!</span>
+
+					<p class="alert-danger">{{alert_invalid_mobile_number}}</p>
+
+				</div>
+
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-4 col-sm-10">
+					<p class="help-block">This mobile number will be contacted
+						during doctor validation.</p>
+				</div>
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+
+			<!-- Form Name -->
+			<legend>2/5 : Professional information</legend>
+
+			<div class="form-group">
+				<label class="col-sm-4 control-label">Medical registration
+					id</label>
+				<div class="col-sm-8">
+					<input type="text" class="form-control"
+						id="id_input_medicalRegistartionId"
+						placeholder="Enter your unique medical registartion number">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-4 col-sm-10">
+					<p class="help-block">* Required</p>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-4 control-label">Select your speciality</label>
+				<div class="col-sm-8">
+
+					<ul class="list-unstyled ">
+						<li data-ng-repeat="speciality in specialities">
+							<div class="checkbox">
+
+								<label> <input
+									style="margin-right: 5px; margin-left: 50px" type="checkbox"
+									name="selectedFruits[]" value="{{speciality}}"
+									ng-checked="selection.indexOf(speciality) > -1"
+									ng-click="toggleSelection(speciality)"> {{speciality}}
+								</label>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+
+			<!-- Form Name -->
+			<legend>3/5 : Education</legend>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="id_input_education"><small>Education</small></label> <input
+							type="text" class="form-control" name="MD" autocomplete="off"
+							id="id_input_education" placeholder="MD">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="id_input_year"><small>Year</small></label> <input
+							type="number" class="form-control" name="Year" autocomplete="off"
+							id="id_input_year" placeholder="2014">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="id_input_education"><small>Education</small></label> <input
+							type="text" class="form-control" name="MD" autocomplete="off"
+							id="id_input_education" placeholder="MD">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="id_input_year"><small>Year</small></label> <input
+							type="number" class="form-control" name="Year" autocomplete="off"
+							id="id_input_year" placeholder="2014">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="id_input_education"><small>Education</small></label> <input
+							type="text" class="form-control" name="MD" autocomplete="off"
+							id="id_input_education" placeholder="MD">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="id_input_year"><small>Year</small></label> <input
+							type="number" class="form-control" name="Year" autocomplete="off"
+							id="id_input_year" placeholder="2014">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-4 control-label" for="id_input_certification">Add
+					certifications if any</label> <input
+					class="col-sm-offset-4 col-sm-8 form-group" type="file"
+					id="id_input_certification_1"> <input
+					class="col-sm-offset-4 col-sm-8 form-group" type="file"
+					id="id_input_certification_2"> <input
+					class="col-sm-offset-4 col-sm-8 form-group" type="file"
+					id="id_input_certification_3">
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-4 control-label">Languages</label>
+				<div class="col-sm-8">
+					<textarea type="tel" row=3 class="form-control"
+						id="id_txtArea_language">
+				</textarea>
+				</div>
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+
+			<!-- Form Name -->
+			<legend>Step 4 of 5 : Clinic information</legend>
+
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label for="textinput">Address 1</label> <input id="textinput"
+					name="textinput" type="text" class="form-control">
+
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label for="Address 2">Address 2</label> <input id="Address 2"
+					name="Address 2" type="text" class="form-control">
+
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label for="textinput">City</label> <input id="textinput"
+					name="textinput" type="text" class="form-control">
+			</div>
+
+			<!-- State input-->
+			<div class="form-group">
+				<label for="textinput">State</label> <input id="id_input_state"
+					name="textinput" type="text" class="form-control">
+			</div>
+
+			<!-- Country input-->
+			<div class="form-group">
+				<label for="textinput">Country</label> <input id="id_input_country"
+					name="textinput" type="text" class="form-control">
+			</div>
+
+		</fieldset>
+
+		<!-- Button -->
+		<div class="form-group pull-right">
+			<label for="singlebutton"></label>
+			<div>
+
+				<button type="submit" id="id_submit_doctor_verification"
+					name="singlebutton" class="btn btn-primary btn-lg">Submit</button>
+
+			</div>
 		</div>
-		<div class="form-group">
-			<p class="help-block">This mobile number will be contacted during
-				doctor validation.</p>
-		</div>
-		<button ui-sref="form.professsionalInformation" class="btn btn-default">Next</button>
 
-	</fieldset>
-</form>
+	</form>
+</div>
