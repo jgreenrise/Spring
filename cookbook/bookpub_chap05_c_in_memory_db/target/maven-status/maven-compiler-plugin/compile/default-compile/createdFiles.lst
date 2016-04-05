@@ -1,0 +1,16 @@
+org/test/bookpub/controllers/BookController.class
+org/test/bookpub/repository/PublisherRepository.class
+org/test/bookpub/entity/Isbn.class
+org/test/bookpub/formatters/BookFormatter.class
+org/test/bookpub/Application.class
+org/test/bookpub/dbcount/DbCountRunner.class
+org/test/bookpub/StartupRunner.class
+org/test/bookpub/WebConfiguration.class
+org/test/bookpub/entity/Author.class
+org/test/bookpub/entity/Book.class
+org/test/bookpub/repository/AuthorRepository.class
+org/test/bookpub/repository/ReviewerRepository.class
+org/test/bookpub/entity/Reviewer.class
+org/test/bookpub/repository/BookRepository.class
+org/test/bookpub/DbCountAutoConfiguration.class
+org/test/bookpub/entity/Publisher.class

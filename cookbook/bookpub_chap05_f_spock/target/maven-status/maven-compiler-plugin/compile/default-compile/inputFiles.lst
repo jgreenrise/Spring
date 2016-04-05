@@ -1,0 +1,17 @@
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/dbcount/EnableDbCounting.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/repository/PublisherRepository.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/DbCountAutoConfiguration.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/repository/ReviewerRepository.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/controllers/BookController.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/StartupRunner.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/entity/Publisher.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/Application.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/entity/Author.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/entity/Book.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/WebConfiguration.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/entity/Isbn.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/formatters/BookFormatter.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/repository/BookRepository.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/entity/Reviewer.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/dbcount/DbCountRunner.java
+/Users/JatinPatel/Documents/Study/Spring4/cookbook/bookpub_chap05_f_spock/src/main/java/org/test/bookpub/repository/AuthorRepository.java

@@ -1,0 +1,7 @@
+org/test/RestfulStepdefs.class
+org/test/TestMockBeansConfig.class
+org/test/BookpubChap05ATestingControllersApplicationTests.class
+org/test/RunCukeTests.class
+org/test/RepositoryStepdefs.class
+org/test/UsedForTesting.class
+org/test/PublisherRepositoryTests.class
